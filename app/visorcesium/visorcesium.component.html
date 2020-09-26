@@ -1,0 +1,13 @@
+<ac-map>
+	<ac-layer acFor="let box of boxes$" [context]="this" [debug]="true" [store]="true">
+		<ac-box-desc props="{
+			show: show,
+			position: box.position,
+			material: Cesium.Color.fromRandom(),
+			dimensions: boxDimensions,
+			outline: true,
+			outlineWidth: 8,
+			outlineColor: Cesium.Color.BLACK
+		}"></ac-box-desc>
+	</ac-layer>
+</ac-map>
